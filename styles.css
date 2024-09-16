@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #bbeccf;
+  padding: 20px 0;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a, #language-btn {
+  text-decoration: none;
+  color: #0e0d0d;
+  font-size: 16px;
+}
+
+nav ul li a:hover, #language-btn:hover {
+  color: #007bff;
+}
+
+#language-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero {
+  background-image: url('trees.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px; /* Añadido para suavizar los bordes */
+}
+
+.cta-btn:hover {
+  background-color: #218838;
+}
+
+.services {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+.about {
+  padding: 20px;
+  background-color: #f4f4f4; 
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+#contact-form {
+  width: 400px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Añadido para bordes suaves */
+  width: 100%; /* Añadido para mejorar la usabilidad */
+  margin-bottom: 15px; /* Espaciado entre inputs */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Añadido para bordes suaves */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}

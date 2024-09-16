@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Tree Trimming and Removal Services">
+  <title>Tree Services USA - Poda de Árboles en USA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#services" id="services-link">Services</a></li>
+          <li><a href="#about" id="about-link">About Us</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+          <li><button id="language-btn">Español</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 id="hero-title">Professional Tree Trimming and Removal Services</h1>
+      <video controls autoplay muted width="640">
+        <source src="treeservices.mp4" type="video/mp4">
+      </video>
+      <p id="hero-subtitle">Safe and Efficient Tree Care in Your Area</p>
+      <a href="https://wa.me/+16692859876" target="_blank" class="cta-btn" id="whatsapp-link-1">Chat with Us on WhatsApp</a>
+      <a href="https://wa.me/+16692620766" target="_blank" class="cta-btn" id="whatsapp-link-2">Chat with Us on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 id="services-title">Our Services</h2>
+      <div class="service-item">
+        <h3 id="service-1">Palm Removal</h3>
+        <p id="service-1-desc">We provide safe and professional Palm Removal.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-2">Cleaning Debris</h3>
+        <p id="service-2-desc">We offer quick and reliable debris clearing services for any situation.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-3">Stump Removal</h3>
+        <p id="service-3-desc">We offer quick and reliable stump removal services for any situation.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-4">Pruning</h3>
+        <p id="service-4-desc">Enhance the health and beauty of your trees with professional pruning services, ensuring strong growth and preventing damage.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-5">Topping</h3>
+        <p id="service-5-desc">Safeguard your property by controlling tree height with expert topping services, promoting safety and preventing overgrowth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 id="about-title">About Us</h2>
+      <p id="about-description">At Tree Services USA, we pride ourselves on providing top-notch tree care services. With a team of certified professionals, we ensure that every job is completed safely and efficiently. Whether you need tree trimming, removal, or maintenance, we're here to help you keep your property looking its best.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 id="contact-title">Contact Us</h2>
+      <form id="contact-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message" id="message-label">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h2><strong>Francisco Javier Medina</strong></h2>
+      <p>Correo : treeservicesmedina@gmail.com</p>
+        <p><b>Cels: +1 (669) 285-9876  +1(669)262-0766</b></p>
+        <p>San José - California</p>
+    </div>
+  </footer>
+
+  <script>
+    const languageBtn = document.getElementById('language-btn');
+    languageBtn.addEventListener('click', () => {
+      const currentLang = languageBtn.innerText;
+      if (currentLang === 'Español') {
+        document.getElementById('hero-title').innerText = 'Servicios Profesionales de Poda y Remoción de Árboles';
+        document.getElementById('hero-subtitle').innerText = 'Cuidado de Árboles Seguro y Eficiente en su Área';
+        document.getElementById('whatsapp-link-1').innerText = 'Contáctanos en WhatsApp';
+        document.getElementById('whatsapp-link-2').innerText = 'Contáctanos en WhatsApp';
+        document.getElementById('services-link').innerText = 'Servicios';
+        document.getElementById('about-link').innerText = 'Acerca de';
+        document.getElementById('contact-link').innerText = 'Contacto';
+        document.getElementById('services-title').innerText = 'Nuestros Servicios';
+        document.getElementById('service-1').innerText = 'Remoción de Palmas';
+        document.getElementById('service-1-desc').innerText = 'Proporcionamos remoción segura y profesional de palmas.';
+        document.getElementById('service-2').innerText = 'Limpieza de Escombros';
+        document.getElementById('service-2-desc').innerText = 'Ofrecemos servicios rápidos y confiables de limpieza de escombros.';
+        document.getElementById('service-3').innerText = 'Remoción de Tocones';
+        document.getElementById('service-3-desc').innerText = 'Ofrecemos remoción rápida y confiable de tocón.';
+        document.getElementById('service-4').innerText = 'Poda';
+        document.getElementById('service-4-desc').innerText = 'Mejora la salud y la belleza de tus árboles con servicios de poda profesional.';
+        document.getElementById('service-5').innerText = 'Corte de Altura';
+        document.getElementById('service-5-desc').innerText = 'Controla la altura de los árboles con servicios de corte profesional.';
+        document.getElementById('contact-title').innerText = 'Contáctanos';
+        document.getElementById('name-label').innerText = 'Nombre';
+        document.getElementById('email-label').innerText = 'Correo Electrónico';
+        document.getElementById('message-label').innerText = 'Mensaje';
+        document.getElementById('submit-btn').innerText = 'Enviar Mensaje';
+        document.getElementById('about-title').innerText = 'Acerca de Nosotros';
+        document.getElementById('about-description').innerText = 'En Tree Services USA, nos enorgullecemos de ofrecer servicios de cuidado de árboles de primer nivel. Con un equipo de profesionales certificados, garantizamos que cada trabajo se complete de manera segura y eficiente. Ya sea que necesite poda de árboles, remoción o mantenimiento, estamos aquí para ayudarle a mantener su propiedad en las mejores condiciones.';
+        languageBtn.innerText = 'English';
+      } else {
+        location.reload();
+      }
+    });
+  </script>
+</body>
+</html>
