@@ -15,6 +15,13 @@ header {
   padding: 20px 0;
 }
 
+.facebook {
+  width: 100%; /* El plugin de Facebook ocupa el ancho completo */
+  margin-right: auto;
+  align-items: center;
+}
+
+
 .logo {
   max-width: 150px;
 }
